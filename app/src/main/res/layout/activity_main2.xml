@@ -55,4 +55,14 @@
         android:textAllCaps="true"
         android:textStyle="bold|italic" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        app:srcCompat="@drawable/back"
+        android:layout_alignBottom="@+id/appBarLayout"
+        android:layout_alignEnd="@+id/textView2" />
+
 </RelativeLayout>
