@@ -1,5 +1,6 @@
 package com.example.girish.butterknife;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -22,12 +23,11 @@ public class MainActivity extends AppCompatActivity {
         // Use this to bind the activity
         ButterKnife.bind(this);
         t1.setText("Hello am ButterKnife");
-
-
         }
-
     @OnClick(R.id.button)
     public void submit(){
         Toast.makeText(getApplicationContext(), " ButterKnife button", Toast.LENGTH_LONG).show();
+       Intent i = new Intent(getApplicationContext(),Main2Activity.class);
+        startActivity(i);
     }
 }
